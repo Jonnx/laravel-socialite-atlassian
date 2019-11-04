@@ -1,6 +1,6 @@
 # Laravel Socialite Atlassian Driver
 
-Leverage Laravel Socialtio provide login & api access authorization for you application with the Connected Apps API for Atlassian Cloud products. 
+Leverage Laravel Socialtie to provide login and api access authorization for you application with the Connected Apps API for Atlassian Cloud products. 
 
 ## Getting Started
 
@@ -17,7 +17,6 @@ your application on https://developer.atlassian.net.
 
 ```
     'atlassian' => [
-        'client_id'        => env('ATLASSIAN_APP_KEY'),
         'client_secret'    => env('ATLASSIAN_APP_SECRET'),
         'redirect'         => '/login/callback',
         'base_uri'         => 'https://id.atlassian.com',
