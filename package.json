@@ -10,7 +10,12 @@
     "cm": "git-cz",
     "cm:retry": "git-cz --retry"
   },
-  "dependencies": {
-    "commitizen": "^4.0.3"
+  "devDependencies": {
+    "cz-conventional-changelog": "3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
