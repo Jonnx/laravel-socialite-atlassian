@@ -11,5 +11,14 @@
     ],
     "require": {
         "laravel/socialite": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jonnx\\Atlassian\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "^8.5@dev"
     }
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace Atlassian;
+namespace Jonnx\Atlassian;
 
 use Laravel\Socialite\Two\AbstractProvider;
 use Laravel\Socialite\Two\ProviderInterface;

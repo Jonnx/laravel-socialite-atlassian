@@ -1,0 +1,68 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+#
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+
+    working_directory: ~/laravel-socialite-atlassian
+
+    steps:
+      - checkout
+      - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
+      - run: sudo docker-php-ext-install zip
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.lock" }}
+            - composer-v1-
+            - node-v1-{{ checksum "yarn.lock" }}
+            - node-v1-
+      - run: yarn
+      - save_cache:
+          key: node-v1-{{ checksum "yarn.lock" }}
+          paths:
+            - ./node_modules
+      - run: composer install -n --prefer-dist --no-progress
+      - save_cache:
+          key: composer-v1-{{ checksum "composer.lock" }}
+          paths:
+            - ./vendor
+
+      # run tests with phpunit or codecept
+      - run:
+          name: Test
+          command: ./vendor/bin/phpunit
+  release:
+    docker:
+      - image: circleci/php:7.1-node-browsers
+
+    working_directory: ~/laravel-socialite-atlassian
+
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - composer-v1-{{ checksum "composer.lock" }}
+            - composer-v1-
+            - node-v1-{{ checksum "yarn.lock" }}
+            - node-v1-
+      - run: yarn
+      - run: yarn semantic-release
+
+workflows:
+  version: 2
+  test:
+    jobs:
+      - test
+      - release:
+          requires:
+            - test
+          filters:
+            branches:
+              only:
+                - master
