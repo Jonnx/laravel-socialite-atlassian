@@ -6,7 +6,7 @@ version: 2
 jobs:
   test:
     docker:
-      - image: circleci/php:7.1-node-browsers
+      - image: circleci/php:7.3-node-browsers
 
     working_directory: ~/laravel-socialite-atlassian
 
@@ -39,7 +39,7 @@ jobs:
           command: ./vendor/bin/phpunit
   release:
     docker:
-      - image: circleci/php:7.1-node-browsers
+      - image: circleci/php:7.3-node-browsers
 
     working_directory: ~/laravel-socialite-atlassian
 
