@@ -1,0 +1,16 @@
+{
+  "name": "laravel-socialite-atlassian",
+  "version": "0.0.0",
+  "description": "Laravel Socialite driver for Atlassian Connected Apps",
+  "repository": "https://github.com/jonnx/laravel-socialite-atlassian",
+  "author": "Jonas Weigert <weigert.jonas@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "cm": "git-cz",
+    "cm:retry": "git-cz --retry"
+  },
+  "dependencies": {
+    "commitizen": "^4.0.3"
+  }
+}

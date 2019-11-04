@@ -1,0 +1,15 @@
+{
+    "name": "jonnx/laravel-socialite-atlassian",
+    "description": "Laravel Socialite driver for Atlassian Connected Apps",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonas Weigert",
+            "email": "weigert.jonas@gmail.com"
+        }
+    ],
+    "require": {
+        "laravel/socialite": "^4.2"
+    }
+}
