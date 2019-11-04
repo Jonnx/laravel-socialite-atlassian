@@ -1,5 +1,7 @@
 # Laravel Socialite Atlassian Driver
 
+[![CircleCI](https://circleci.com/gh/Jonnx/laravel-socialite-atlassian/tree/master.svg?style=svg)](https://circleci.com/gh/Jonnx/laravel-socialite-atlassian/tree/master)
+
 Leverage Laravel Socialtie to provide login and api access authorization for you application with the Connected Apps API for Atlassian Cloud products. 
 
 ## Getting Started
