@@ -11,7 +11,38 @@
     "cm:retry": "git-cz --retry"
   },
   "devDependencies": {
-    "cz-conventional-changelog": "3.0.2"
+    "cz-conventional-changelog": "3.0.2",
+    "@commitlint/cli": "^8.1.0",
+    "@semantic-release/changelog": "^3.0.4",
+    "@semantic-release/commit-analyzer": "^6.3.0",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/github": "^5.4.2",
+    "@semantic-release/npm": "^5.1.13",
+    "@semantic-release/release-notes-generator": "^7.3.0",
+    "commitizen": "^3.1.2",
+    "cz-ls-commits": "https://github.com/lawnstarter/cz-ls-commits#0.3.1",
+    "husky": "^2.7.0",
+    "semantic-release": "^15.13.19"
+  },
+  "release": {
+    "tagFormat": "${version}",
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "yarn.lock"
+          ]
+        }
+      ],
+      "@semantic-release/github"
+    ]
   },
   "config": {
     "commitizen": {
