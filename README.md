@@ -1,4 +1,4 @@
-# Laravel Socialte Atlassian Driver
+# Laravel Socialite Atlassian Driver
 
 Leverage Laravel Socialtio provide login & api access authorization for you application with the Connected Apps API for Atlassian Cloud products. 
 

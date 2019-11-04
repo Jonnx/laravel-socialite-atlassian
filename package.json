@@ -5,7 +5,7 @@
   "repository": "https://github.com/jonnx/laravel-socialite-atlassian",
   "author": "Jonas Weigert <weigert.jonas@gmail.com>",
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
     "cm": "git-cz",
     "cm:retry": "git-cz --retry"
@@ -17,7 +17,6 @@
     "@semantic-release/commit-analyzer": "^6.3.0",
     "@semantic-release/git": "^7.0.16",
     "@semantic-release/github": "^5.4.2",
-    "@semantic-release/npm": "^5.1.13",
     "@semantic-release/release-notes-generator": "^7.3.0",
     "commitizen": "^3.1.2",
     "cz-ls-commits": "https://github.com/lawnstarter/cz-ls-commits#0.3.1",
@@ -30,7 +29,6 @@
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@semantic-release/npm",
       [
         "@semantic-release/git",
         {
