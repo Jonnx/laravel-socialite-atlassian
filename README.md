@@ -19,6 +19,7 @@ your application on https://developer.atlassian.net.
 
 ```
     'atlassian' => [
+        'client_id'        => env('ATLASSIAN_APP_ID'),
         'client_secret'    => env('ATLASSIAN_APP_SECRET'),
         'redirect'         => '/login/callback',
         'base_uri'         => 'https://id.atlassian.com',
