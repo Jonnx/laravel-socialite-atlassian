@@ -28,7 +28,7 @@ your application on https://developer.atlassian.com.
 
 Make sure you add & set the following 2 values in your ```.env``` file:
 ```
-ATLASSIAN_APP_KEY=
+ATLASSIAN_APP_ID=
 ATLASSIAN_APP_SECRET=
 ```
 
