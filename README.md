@@ -15,7 +15,7 @@ composer require jonnx/laravel-socialite-atlassian
 
 #### Update Configuration
 You will need to add your client application configuration to the `config/services.php` file. You can generate these keys registering
-your application on https://developer.atlassian.net.
+your application on https://developer.atlassian.com.
 
 ```
     'atlassian' => [
