@@ -4,6 +4,8 @@
 
 Leverage Laravel Socialtie to provide login and api access authorization for you application with the Connected Apps API for Atlassian Cloud products. 
 
+![Larvel Socialite Atlassian Preview](https://github.com/jonnx/laravel-socialite-atlassian/preview.gif)
+
 ## Getting Started
 
 There are only a few steps to register the ```atlassian``` socialite driver. After that you can leverage the generic Socialite implemententation to authenticate users.
