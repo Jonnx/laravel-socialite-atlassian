@@ -21,7 +21,7 @@
     "commitizen": "^3.1.2",
     "cz-ls-commits": "https://github.com/lawnstarter/cz-ls-commits#0.3.1",
     "husky": "^2.7.0",
-    "semantic-release": "^15.13.19"
+    "semantic-release": "^17.2.3"
   },
   "release": {
     "tagFormat": "${version}",
